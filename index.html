@@ -5,7 +5,9 @@
     <title>Andrienko Ilia</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script type="text/javascript">
-        if('ontouchstart' in document.documentElement){
+        var el = document.createElement('div');
+        el.setAttribute('ongesturestart', 'return;');
+        if(typeof el.ongesturestart === "function"){
             document.write('<style type="text/css">.notouch {display: none;}</style> ');
         }
     </script>
@@ -15,17 +17,15 @@
 
 <div class="wrapper">
     <div class="hero">
-
         <svg>
             <defs>
                 <pattern id="enigma" patternUnits="userSpaceOnUse" width="332" height="157" >
                     <image xlink:href="bg.png" width="332" height="157" />
                 </pattern>
             </defs>
-            <text y="1.2em">Hello.</text>
+            <text y="1em">Hello.</text>
         </svg>
-
-        <h2>My name is Ilia and I am a&nbsp;PHP&nbsp;Developer.<br/>Welcome to my GitHub page.</h2>
+        <h2>My name is Ilia and I am a&nbsp;web&nbsp;Developer.<br/>Welcome to my GitHub page.</h2>
     </div>
     <div class="text">
 
