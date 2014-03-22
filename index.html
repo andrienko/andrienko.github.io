@@ -5,7 +5,7 @@
     <title>Andrienko Ilia</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script type="text/javascript">
-        if(window.ontouchstart){
+        if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
             document.write('<style type="text/css">.notouch {display: none;}</style> ');
         }
     </script>
