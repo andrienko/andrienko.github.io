@@ -5,9 +5,7 @@
     <title>Andrienko Ilia</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script type="text/javascript">
-        var el = document.createElement('div');
-        el.setAttribute('ongesturestart', 'return;');
-        if(typeof el.ongesturestart === "function"){
+        if(window.ontouchstart){
             document.write('<style type="text/css">.notouch {display: none;}</style> ');
         }
     </script>
