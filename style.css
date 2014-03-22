@@ -27,14 +27,22 @@ body {
     padding-bottom: 300px;
 }
 
+/*
 h1 {
     color: #66023C;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(transparent, transparent), url('bg.png') bottom left;
+    background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
     font-size: 128px;
     position: relative;
+}*/
+
+svg {
+    width: 6em; height: 1.5em;
+    font: 300 128px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
+text { fill: url(#wood); }
 
 ul {
     margin-bottom: 1em;
