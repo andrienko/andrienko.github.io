@@ -14,6 +14,9 @@ header{
 header span{
   display: inline-block;
 }
+header i{
+  display: inline-block;
+}
 header span::after{
   margin-left: 0.5ch;
   content: '\1F1FA\1F1E6';
