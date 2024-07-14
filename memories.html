@@ -11,21 +11,28 @@
   </head>
   <body>
     <header>
-      <h1>Memories</h1>
+      <h1>Couple memories of the old web</h1>
+      <h2>It was somewhat horrible but majestic at the same time</h2>
     </header>
 
     <main>
-      <p>Couple memories of the old web. It was horrible but majestic at the same time.</p>
       <ul>
         <li>
           My first "serious" IDE for the web was something called Aptana - basically an Eclipse with some cool additions
           for web development. It had its own JRE in a folder - I could just put it on my 2GB USB flash drive and use it
           everywhere without installing Java. Big deal. On a flash drive it was next to my manually configured
-          "portable" Apache, and a portable version of Chrome.
+          "portable" Apache, and a portable version of Chrome. And before Aptana I have used Dreamweaver, I did not know
+          how to HTML much, and dreamweaver was a WYSIWYG thing. Tweaking what dreamweaver produced was how I learnt
+          HTML and CSS.
         </li>
         <li>
           All one had to do to deploy a website is upload the updated files via FTP. Fancy IDEs had FTP built in - one
           just had to click a button to sync with an FTP. There was no CI/CD, no one used VCS. Later, SVN prevailed.
+        </li>
+        <li>
+          XSS was a thing. It still <a href="https://aszx87410.github.io/beyond-xss/en/">is</a>, but web is a way safer
+          place now. Everything had to be done with meticulous care. Sanitizing input for databases was not a common
+          thing - there were no prepared statements. CORS was not a thing, too. JSONP was.
         </li>
         <li>
           There was no such thing as Developer Tools. So people used FireBug back then. In Opera I used FireBug Lite,
@@ -33,14 +40,18 @@
           <code>*{ border: 1px solid red; }</code>.
         </li>
         <li>
-          Usually, what came from a designer was either a single PSD file, or even a JPEG. Often had to slice them. If
-          the designer was tech-savvy - the design was in and HTML table. And it was times when everyone already
-          hesitated to use table layouts. A "markup guy" was a thing, "javascript developer" was not.
+          It was typical to hand-code things. Template engines were not a thing. PHP was mainly used to not repeat
+          yourself, to include headers/sidebars/footers, but pages were usually hand-coded. Later, it become typical to
+          write own CMS to edit these html pages (via simple text field with html in it, and later with some WYSIWYG
+          like CKEditor and TinyMCE). On free-lance market everyone had his own tiny CMS, because "big" CMSs were hard
+          to set up and they required a database, and database required maintenance, migration, backups and all that.
+          Databases were usually hosted to have a forum. Forums were a thing, blogs were not. Later, it become common to
+          make "web portals" for everything, that had forum, blog, gallery, guestbook and a flash clock in its sidebar.
         </li>
         <li>
-          <code>float</code> was the only way to do layouts. Imagine entire page layout done with float. That is, your
-          sidebar is <code>float: right</code>. The floats had to be cleared, and the <code>::after</code> clearfix was
-          not a thing - because we had to support IE6.
+          What came from a designer was often either a single PSD file or.. a single JPEG file. Webmaster often had to
+          slice them manually. If the designer was tech-savvy - the design came already sliced, in an HTML table. A
+          webmaster, the "markup guy" was a thing, "front-end developer" was not.
         </li>
         <li>
           IE5 and IE6 had support for PNG, but to enable that one had to add
@@ -48,26 +59,93 @@
           via JavaScript, because that also required the image source.
         </li>
         <li>
+          <a
+            href="https://web.archive.org/web/20150324181023/http://www.communitymx.com/content/article.cfm?page=2&cid=C37E0"
+            >Holly Hack</a
+          >
+          was huge. It allowed to mitigate IE5/6 box model issues. The idea is that different browsers handled CSS
+          differently, and in IE there was a bug that allowed to target IE only. Also, in IE one had to write
+          <code>position: relative; zoom: 1</code> - it fixed a lot of issues with alpha and whatnot.
+        </li>
+        <li>
+          Working with SVG was a pain across browsers. Everybody used a library called
+          <a href="https://github.com/DmitryBaranovskiy/raphael">Raphaël.js</a>, it was the only reliable way to
+          manipulate/create SVGs. Nowadays it become
+          <a href="https://github.com/adobe-webplatform/Snap.svg">Snap.svg</a>, but it is not as popular because SVG is
+          now cross-browser and reliable.
+        </li>
+        <li>
+          1px.gif, used to create spacers, to have margins consistent. Mainly because of IE, that did not display table
+          cell if it was empty, so had to put something there, and non-breaking space took too much space (it is still a
+          thing in email clients, btw). Also, IE handled margins weirdly, so to have a consistent, explicitly defined
+          margin we used an &lt;img/&gt; tag with 1px transparent gif in it and width/height set explicitly.
+        </li>
+        <li>
+          Pixel-perfect markup was largely a thing. Clients demanded their websites to look exactly like the PSD they
+          were made from. It was way harder to do than it is now, but now there is less demand for that.
+        </li>
+        <li>
+          960.gs was a thing! It helped a lot with the layout, before the bootstrap become popular. Later, I've seen a
+          lot of websites using bootstrap for its grid only.
+        </li>
+        <li>
           There was times when <code>border-radius</code> was not supported by browsers. Before chrome, before prefixes
           - only opera had it. So to do border radius and a shadow it had to be done via 2 extra divs and 4 images.
-          <code>border-image</code> was not a thing either.
+          <code>border-image</code> was not a thing either. For some reason designers were obsessed with rounded corners
+          back then, so it was a must. On an interview it was a common thing to ask a candidate about round corners.
+        </li>
+        <li>Paid browsers were a thing. Free version of Opera showed a huge banner on top of its interface.</li>
+        <li>
+          Cufon and sIFR were a thing. Sometimes designers wanted to use a fancy font or two, and client insisted. But
+          there was no <code>@font-face</code> yet. Cufon allowed to load and render custom fonts using JS (after canvas
+          became a thing) and sIFR allowed to do that using flash (before canvas). Also, cufon allowed text to have
+          shadows and other stuff, not possible via CSS back then.
+        </li>
+        <li>
+          Everybody's page 404 was a creative one! It was common to have a huge image there, or some game, something
+          outstanding. People got so creative with them, that they even sometimes forgot to place the only important
+          thing there - a link to go back to main page.
+        </li>
+        <li>
+          "Welcome pages" on sites! Often websites had a landing page with a link to "Enter this site". In non-english
+          speaking countries it was also common to have different versions of the website in different encodings,
+          because UTF was not a thing yet, and these landings allowed to select encoding.
+        </li>
+        <li>
+          People used framesets for layout. People used tables for layout. Using divs for layout was a pain, but it was
+          elite. At some point there was a belief that search engines favor sites with div layout, so
+          <code>float</code> was the only way to do layouts. That is, your sidebar is <code>float: right</code>. The
+          floats had to be cleared, and the <code>::after</code> clearfix was not a thing - because we had to support
+          IE.
+        </li>
+        <li>
+          "mobile" versions of website were a thing. WAP was a thing. There were no mediaqueries, so the mobile version
+          often was a separate website under different subdomain. Also, internet traffic was way more expensive, so the
+          modern approach to serve a 1.5mb webpage and just have its CSS to adjust to small screen was not viable.
+        </li>
+        <li>
+          A lot of "dynamic" stuff was done using jQuery. Things that are nowadays done using CSS only. There were
+          websites like <a href="http://www.dynamicdrive.com/dynamicindex3/">Dynamic drive</a>, that hosted easily
+          pluggable javascripts for your website. You simply downloaded it and plugged, there were no package control
+          and no bundlers. It was common to add mouse trails, snowflakes and other silly things to websites, even the
+          "serious", corporate ones.
         </li>
         <li>
           There was no such a thing as "web apps". There was no concept of a "single-page application". "Web apps" were
           either java applets or flash. JavaScript was mainly used to pop-up menus and whatnot. HTML4 was the main
-          thing, if you wanted something fancy and visual - it was the pain. People used to call it "DHTML".
-        </li>
-
-        <li>
-          It was typical to write your own CMS. On free-lance market everyone had his own CMS, at least. I preferred
-          using plain text files to store data - so my CMS did not require a database.
-        </li>
-        <li>
-          XSS was a thing. It still is, but web is a way safer place now. Everything had to be done with meticulous
-          care. Sanitizing input for databases was not a common thing - there were no prepared statements. CORS was not
-          a thing, too. JSONP was.
+          thing, if you wanted something fancy and visual - it was the pain. People used to call it "DHTML". And it was
+          often broken! - just because you had an unsupported browser, or the developer had a rough day, or you had JS
+          disabled.
         </li>
       </ul>
+      <p>
+        Despite all the limitations and quirks, being a developer just sparked joy. In order to do even most basic
+        things one had to learn and "be on a bleeding edge" of things. It involved a lot of experimentation, weirdest
+        challenges and required creativity first of all. The web was not "yet another platform" back then, and users
+        were not treated as "products". Expectations were lower, technologies were simpler. It was a frontier, wild
+        west, and it was fun.
+      </p>
+      <p>Of course, it still IS fun today. But different kind of fun, more "mature" kind of fun.</p>
     </main>
 
     <footer>
