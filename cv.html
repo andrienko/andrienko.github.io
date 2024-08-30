@@ -1,5 +1,9 @@
-<!-- This file is designed to be portable. Not loading from files on purpose (The font should be external, 
-tho, with a fallback). Feel free to just share this HTML file where it matters. -->
+<!-- This file is designed to be portable. Not loading from files on purpose. 
+Feel free to just share this HTML file where it matters.
+
+This file was generated from a dataset and a template.
+It is designed to be printable and monochrome.
+-->
 
 <!doctype html>
 <html lang="en">
@@ -10,7 +14,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
     <style type="text/css">
       body {
         font:
-          normal 12pt/24px system-ui,
+          200 14pt/28px system-ui,
           'Segoe UI',
           Roboto,
           Helvetica,
@@ -68,8 +72,8 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
       .tagGroups-section > .tagGroups-data .tagGroup {
         margin: 0 0 0.5rem 0;
       }
-      .tagGroups-section > .tagGroups-data .tagGroup b {
-        padding-right: 0.75rem;
+      .tagGroups-section > .tagGroups-data .tagGroup .title {
+        padding-right: 0.5rem;
         display: inline-block;
       }
       .tagGroups-section > .tagGroups-data .tagGroup div {
@@ -113,26 +117,31 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         color: #555;
       }
       .projects-section > .projects-data .project .tags {
+        font-size: 0.9rem;
         margin-bottom: 0.5rem;
       }
       .projects-section > .projects-data .project .tags b {
         margin-right: 0.75rem;
       }
       .tags-list {
-        font:
-          normal 1.1rem ui-monospace,
-          SFMono-Regular,
-          Consolas,
-          'Liberation Mono',
-          Menlo,
-          monospace;
+        font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono',
+          Menlo, monospace;
       }
       @page {
         size: auto;
         margin: 1cm 1cm;
       }
+      @media not print {
+        body {
+          padding: 4rem;
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
       @media print {
         body {
+          padding: 1rem;
           background: #fff;
           color: #000;
         }
@@ -172,14 +181,6 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
           font-size: 1.5rem;
         }
       }
-      @media not print {
-        body {
-          padding: 5rem 1rem;
-          max-width: 900px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
     </style>
   </head>
   <body>
@@ -195,9 +196,9 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
 
       <div class="data text-data">
         <p>
-          I was born in 1990. I write code for businesses since my school years.
-          Programming is my main hobby and my main passion, my entire adult
-          life. Received my engineering degree in 2014.
+          I was born in 1990. I write code for living since my school years.
+          Also, programming is my main hobby and my main passion, my entire
+          adult life. Received my engineering degree in 2014.
         </p>
         <ul>
           <li>Skype: ilia.andrienko</li>
@@ -227,22 +228,25 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
           </li>
 
           <li>
-            Experience with UI/UX design and even some - in computer graphics
-            programming.
+            Experience with UI/UX design and some experience in computer
+            graphics programming.
           </li>
 
           <li>
-            (Some) experience in full-stack development, with focus on
-            front-end. Understanding of common workflows, patterns and
-            architectural approaches, code quality requirements. Experience
-            working with micro-service architectures.
+            Understanding of common workflows, patterns and architectural
+            approaches, code quality requirements. Experience working with
+            micro-service architectures.
           </li>
 
           <li>
-            Some background in PHP development, knowledge of its frameworks and
+            Experience in full-stack development, with focus on front-end.
+          </li>
+
+          <li>
+            Background in PHP development, knowledge of its frameworks and
             CMSes. WordPress expertise. Experience in back-end JS development
             with web sockets. Experience in microservice architectures and
-            domain-driven design.
+            domain-driven design. Experience working with databases.
           </li>
 
           <li>
@@ -252,10 +256,15 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
           </li>
 
           <li>
-            I respect the ECMA spec. Also, I love the anarchy that is
-            JavaScript. I never hesitate to set up my build tools. Also I am an
-            advanced PC user (Not afraid of GNU/Linux, i3 and vim, setting
-            things up also won&#39;t scare me)
+            I love to do CSS, to work with canvas ant to reinvent some wheels
+            when required. I prefer strict linter rules and love to
+            refactor/re-structure things.
+          </li>
+
+          <li>
+            I respect the ECMA spec and I love the anarchy that is JavaScript. I
+            never hesitate to set up my build tools and setting things up
+            won&#39;t scare me
           </li>
 
           <li>
@@ -269,6 +278,15 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
       <h3 class="title employment-title">Employment</h3>
 
       <div class="data employment-data">
+        <div class="employer">
+          Sr. Front-end developer &mdash;
+          <b
+            ><a href="https://appstream.studio/">AppStream</a> - contract
+            work</b
+          >
+          <i> 2024-present </i>
+        </div>
+
         <div class="employer">
           Sr. Front-end developer &mdash;
           <b><a href="https://simbaze.com/">SimBaze</a></b>
@@ -294,23 +312,30 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         </div>
 
         <div class="employer">
-          PHP, Front-End, UI/UX &mdash; <b>as a free-lancer</b>
+          PHP, Front-End, UI/UX &mdash; <b>contract work</b>
           <i> 2009 - November 2013 </i>
         </div>
       </div>
     </div>
 
     <div class="section tagGroups-section">
-      <h3 class="title tagGroups-title">Tools I use(d)</h3>
+      <h3 class="title tagGroups-title">Tools and keywords</h3>
 
       <div class="data tagGroups-data">
         <p class="tagGroup">
-          <b>Main:</b>
+          <span class="title">Main:</span>
           <span class="tags-list">ES6, TypeScript, React, MobX</span>
         </p>
 
         <p class="tagGroup">
-          <b>Markup:</b>
+          <span class="title">Current:</span>
+          <span class="tags-list"
+            >React, Next, Tailwind, Zustand, Zod, Tanstack Query</span
+          >
+        </p>
+
+        <p class="tagGroup">
+          <span class="title">Markup:</span>
           <span class="tags-list"
             >ARIA/WCAG, CSS, LESS, SCSS, Tailwind, Material, Bootstrap,
             Foundation</span
@@ -318,78 +343,86 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         </p>
 
         <p class="tagGroup">
-          <b>React:</b>
+          <span class="title">State:</span>
           <span class="tags-list"
-            >Redux, Hooks, Mantine, HookForms, Signals</span
+            >Zustand, MobX, Redux, Hooks, HookForms, Signals</span
           >
         </p>
 
         <p class="tagGroup">
-          <b>Libs:</b>
+          <span class="title">Libs:</span>
           <span class="tags-list"
             >Preact, Vue, Angular(s), Ember, Mithril, Svelte, Next.js, Zod</span
           >
         </p>
 
         <p class="tagGroup">
-          <b>More Libs:</b>
+          <span class="title">More Libs:</span>
           <span class="tags-list">jQuery, Lodash, Backbone, RX, Modernizr</span>
         </p>
 
         <p class="tagGroup">
-          <b>Vis:</b>
+          <span class="title">Vis:</span>
           <span class="tags-list">D3, Three.JS, Phaser, Pixi, p5, GLSL</span>
         </p>
 
         <p class="tagGroup">
-          <b>Toolset:</b>
+          <span class="title">Styles:</span>
+          <span class="tags-list">Tailwind, LESS, CSS, SCSS, ARIA, WCAG</span>
+        </p>
+
+        <p class="tagGroup">
+          <span class="title">Toolset:</span>
           <span class="tags-list"
             >Webpack, Rollup, Gulp, Vite, Plop, Docker, Rush, Bazel</span
           >
         </p>
 
         <p class="tagGroup">
-          <b>Back-end:</b>
-          <span class="tags-list"
-            >PHP (Laravel, Wordpress, Symfony), NodeJS (Nest, Express)</span
-          >
+          <span class="title">Node:</span>
+          <span class="tags-list">NestJS, Express, Next SSR, Meteor</span>
         </p>
 
         <p class="tagGroup">
-          <b>Native:</b>
+          <span class="title">PHP:</span>
+          <span class="tags-list">Laravel, Wordpress, Symfony</span>
+        </p>
+
+        <p class="tagGroup">
+          <span class="title">Native:</span>
           <span class="tags-list"
             >Electron, Tauri, React Native, Ionic, .NET WinForms</span
           >
         </p>
 
         <p class="tagGroup">
-          <b>Databases:</b>
+          <span class="title">Databases:</span>
           <span class="tags-list"
-            >SQL (MySQL, Postgres, SQLite), NoSQL (Mongo, CouchDB, Redis)</span
+            >MySQL, Postgres, SQLite, Mongo, CouchDB, Redis</span
           >
         </p>
 
         <p class="tagGroup">
-          <b>Software:</b>
+          <span class="title">Software:</span>
           <span class="tags-list">VSCode, WebStorm, Git, Jira, Photoshop</span>
         </p>
 
         <p class="tagGroup">
-          <b>Tests:</b>
+          <span class="title">Tests:</span>
           <span class="tags-list"
             >Jest, Jasmine, Mocha, Puppeteer, Cypress, Playwright</span
           >
         </p>
 
         <p class="tagGroup">
-          <b>OS:</b>
+          <span class="title">OS:</span>
           <span class="tags-list">OSX, Windows, Debian, RHEL, Nix</span>
         </p>
 
         <p class="tagGroup">
-          <b>I read:</b>
+          <span class="title">I read:</span>
           <span class="tags-list"
-            >ELM, Bash, Rust, C, C#, Java, LUA, Erlang, Zig</span
+            >Bash, C, C#, Java, Rust, ELM, LUA, Erlang, Zig</span
           >
         </p>
       </div>
@@ -402,7 +435,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Digital advertisement platform</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list"
               >React, signals, react-hook-form, Zod, Bazel</span
             >
@@ -423,7 +456,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>SQL IDE app</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list"
               >Desktop, Electron, TypeScript, MobX, React</span
             >
@@ -448,7 +481,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Data analytics platform</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list"
               >Enterprise, Web, Big data, Flowtype, React, redux-saga</span
             >
@@ -472,7 +505,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Social networking client</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list"
               >Social Network, Web, real-time, React, Socket.io,
               Selenium-webdriver</span
@@ -495,7 +528,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Payment system communication layer/CRM</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list">FinTech, Back-end, PHP</span>
           </div>
           <div class="summary">
@@ -516,7 +549,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Marketing CRM system</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list"
               >CRM, Server, Web, NodeJS, React, SendGrid, MongoDB, WordPress,
               REST</span
@@ -542,7 +575,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Ticket selling webapp</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list"
               >Marketing, Web, Angular, .NET core, markup</span
             >
@@ -568,7 +601,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Security Audit CRM</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list">CRM, Web, React, D3, APIs, LESS</span>
           </div>
           <div class="summary">
@@ -598,7 +631,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Intra web CRM</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list">CRM, Web, Angular, .NET, APIs, LESS</span>
           </div>
           <div class="summary">
@@ -623,7 +656,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Medical documentation workflow software</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list"
               >Healthcare, Web, Server, Java EE, Angular 1</span
             >
@@ -642,7 +675,7 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
         <div class="project">
           <h4>Informational services subscription service</h4>
           <div class="tags">
-            <b>Tags: </b>
+            Tags:
             <span class="tags-list">Marketing, Web, Angular 2, APIs, SCSS</span>
           </div>
           <div class="summary">
@@ -672,7 +705,8 @@ tho, with a fallback). Feel free to just share this HTML file where it matters. 
     </div>
 
     <div class="generation-date">
-      Last update - <time datetime="2024-07-14T09:53:18+03:00">July 2024</time>
+      Last update -
+      <time datetime="2024-08-30T16:25:07+03:00">August 2024</time>
     </div>
   </body>
 </html>
